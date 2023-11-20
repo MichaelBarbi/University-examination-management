@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"javasource.resourceobjects","l":"CorsoLaurea"},{"p":"javasource.resourceobjects","l":"Date"},{"p":"javasource.resourceobjects","l":"Persona"},{"p":"javasource.resourceobjects","l":"TipologiaCorsoEsame"}];updateSearchResults();
