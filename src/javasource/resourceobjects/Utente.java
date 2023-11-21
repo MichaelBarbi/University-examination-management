@@ -190,8 +190,8 @@ public abstract class Utente implements Serializable{
 	/**
 	 * Restituisce una lista di utenti appartententi ad una delle classi figlie
 	 * 
-	 * @param utenti
-	 * @return List<Utente>
+	 * @param utenti {@link List}{@link Utente}
+	 * @return {@link List}{@link Utente}
 	 */
 	public abstract List<Utente> getUtentiDelloStessoTipo(List<Utente> utenti);
 	

@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"javasource.resourceobjects"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"javasource"},{"l":"javasource.resourceobjects"},{"l":"testing"}];updateSearchResults();

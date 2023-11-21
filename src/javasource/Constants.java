@@ -8,7 +8,15 @@ import java.io.File;
  * @author Barbi Michael
  */
 
-public class Constants {
+public abstract class Constants {
+	
+	/**
+	 * 
+	 * Costruttore
+	 */
+	public Constants() {
+		
+	}
 	
 	/**
 	 * files project path

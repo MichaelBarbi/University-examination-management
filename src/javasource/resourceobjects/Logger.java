@@ -15,6 +15,14 @@ import javasource.Constants;
  */
 
 public abstract class Logger {
+	
+	/**
+	 * 
+	 * Costruttore
+	 */
+	public Logger() {
+		
+	}
 
 	/**
 	 * Nome della classe in cui compare l'errore
@@ -99,9 +107,9 @@ public abstract class Logger {
 	/**
 	 * Scrive sul file di log un nuovo errore
 	 * 
-	 * @param className String
-	 * @param methodName String
 	 * @param message String
+	 * @param local {@link LocalDateTime}
+	 * @param stackTrace {@link StackTraceElement}[]
 	 */
 	public static void writeLog(String message, LocalDateTime local, StackTraceElement[] stackTrace) {
 		try {
@@ -111,7 +119,7 @@ public abstract class Logger {
 			File logFile = new File(Constants.LOG);
 			
 			//Scrittura sul file di log
-			BufferedWriter bw = new BufferedWriter(new FileWriter(logFile));
+			BufferedWriter bw = new BufferedWriter(new FileWriter(logFile, true));
 			
 			bw.write(Constants.LOG_SEP);
 			

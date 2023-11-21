@@ -1,15 +1,19 @@
-ABC
 3
-1,2,3
-1,2,3
-1,2,3
-MATEMATICA
-3
-1,2,3
-4,5,6
-7,8,9
-TELE
-3
-1,2,3
-1,2,3
-1,2,3
+MATE
+FIM
+triennale
+1,2,3,
+4,5,6,
+7,8,9,
+Scienze naturali
+FIM
+triennale
+a,b,c,
+a,b,c,
+a,b,c,
+Scienze naturali
+FIM
+triennale
+a,b,c,
+a,b,c,
+a,b,c,
