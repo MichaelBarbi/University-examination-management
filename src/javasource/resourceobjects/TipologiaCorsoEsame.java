@@ -75,7 +75,7 @@ public enum TipologiaCorsoEsame implements Serializable{
 	 * 
 	 * @return Integer
 	 */
-	public Integer NumeroAnni() {
+	public Integer numeroAnni() {
 		switch (this.tipo) {
 		case "triennale":
 			return 3;
@@ -91,6 +91,7 @@ public enum TipologiaCorsoEsame implements Serializable{
 	/**
 	 * Ritorna il tipo di laurea specificato uno dei numeri corrispondenti
 	 * 
+	 * @param number Integer
 	 * @return type TipologiaCorsoEsame
 	 */
 	public TipologiaCorsoEsame getTypeFromNumber(Integer number) {

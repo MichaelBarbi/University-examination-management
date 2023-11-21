@@ -1,6 +1,5 @@
 package javasource.resourceobjects;
 
-import java.io.FileInputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -30,8 +29,8 @@ public class Studente extends Utente implements Serializable{
 	/**
 	 * Dato una lista di utenti, ne restituisce una con solo studenti
 	 * 
-	 * @param utenti
-	 * @return List<Utente>
+	 * @param utenti {@link List}{@link Utente}
+	 * @return {@link List}{@link Utente}
 	 */
 	@Override
 	public List<Utente> getUtentiDelloStessoTipo(List<Utente> utenti) {
