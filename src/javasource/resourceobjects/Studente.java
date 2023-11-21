@@ -1,6 +1,7 @@
 package javasource.resourceobjects;
 
 import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -47,7 +48,7 @@ public class Studente extends Utente implements Serializable{
 			return studenti;
 		}
 		
-		System.out.println("\nLa lista di utenti è vuota");
+		Logger.writeLog("La lista di studenti e' vuota", LocalDateTime.now(), Thread.currentThread().getStackTrace());
 		
 		return null;
 	}
