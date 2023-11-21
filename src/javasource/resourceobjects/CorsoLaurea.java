@@ -226,7 +226,7 @@ public class CorsoLaurea implements Serializable{
 			this.materie = new ArrayList<List<String>>(tot);
 			
 		} else {
-			System.err.println("\nIl tipo del corso di laurea non è specificato");
+			Logger.writeLog("Il tipo del corso di laurea non è specificato", LocalDateTime.now(), Thread.currentThread().getStackTrace());
 		}
 	}
 	
@@ -246,7 +246,7 @@ public class CorsoLaurea implements Serializable{
 			}
 			
 		} else {
-			System.err.println("\nMaterie non presenti");
+			Logger.writeLog("Materie non presenti", LocalDateTime.now(), Thread.currentThread().getStackTrace());
 		}
 	}
 	
@@ -290,20 +290,25 @@ public class CorsoLaurea implements Serializable{
 					bw.newLine();
 					
 					for(List<String> materie_per_anno: corso.getMaterie()) {
-						for (String materia: materie_per_anno) {
-							bw.write(materia + Constants.MATERIE_SEP);
+						
+						for (int i = 0; i < materie_per_anno.size(); i++) {
+							if ((i+1) >= materie_per_anno.size()) {
+								bw.write(materie_per_anno.get(i));
+							} else {
+								bw.write(materie_per_anno.get(i) + Constants.MATERIE_SEP);
+							}
 						}
 						bw.newLine();
-					}				
+					}			
 					
 				}
 				
 				bw.close();
 				
 			} catch (NullPointerException n) {
-				n.printStackTrace();
+				Logger.writeLog(n.getMessage(), LocalDateTime.now(), Thread.currentThread().getStackTrace());
 			} catch (IOException e) {
-				e.printStackTrace();
+				Logger.writeLog(e.getMessage(), LocalDateTime.now(), Thread.currentThread().getStackTrace());
 			}
 		} else {
 			Logger.writeLog("Nessun corso definito", LocalDateTime.now(), Thread.currentThread().getStackTrace());
